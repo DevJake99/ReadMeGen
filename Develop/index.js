@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+//  packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
 
-// TODO: Create an array of questions for user input
+// an array of questions for user input
 questions = [
     {
         type: 'input',
@@ -49,35 +49,33 @@ questions = [
     
 ];
 
-// TODO: Create a function to write README file
+//  function to write README file
 const generateReadMe = ({ProjectTitle, Motivation, tableOfContents, Steps, Credits, license, Features, contribute}) =>
 
-/*function writeToFile(fileName, data){
-    const content = */
     `#${ProjectTitle}
-    ______________________________________
     
     ##Description
     ${Motivation}
-    ______________________________________
+    
     ##Table of Contents
     ${tableOfContents}
-    ______________________________________
+    
     ##Instillation
     ${Steps}
-    ______________________________________
+    
     ##Credits
     ${Credits}
-    ______________________________________
+
     ##license
     ${license}
-    ______________________________________
+
     ##Features
     ${Features}
-    ______________________________________
+    
     ##How to contribute
     ${contribute}`;
 
+    // inquirer method to implement user input
     inquirer.prompt(questions)
     .then((answers) => {
         const pageContent = generateReadMe(answers);
@@ -87,23 +85,7 @@ const generateReadMe = ({ProjectTitle, Motivation, tableOfContents, Steps, Credi
         );
     });
     
-   /* fs.writeFile("README.md", data)
-    .then(() => console.log('README file generated successfully'))
-    .catch((err) => comsole.log('Error generating README file:', err));
-
- }*/
-
+   
 // TODO: Create a function to initialize app
-
-/*let nobre = 'README';
-function init() {
-    inquirer.prompt(questions)
-    .then((answers) => {
-        fs.writeFile('nobre.md', answers);
-    })
-    .catch((err) => console.error('Error initializing application:', err));
-}*/
-
-// Function call to initialize app
 //init();
 

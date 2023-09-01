@@ -1,23 +1,22 @@
 #README Generator
-    ______________________________________
     
     ##Description
-    To become a sick web developer
-    ______________________________________
+    This project was built to automate the process of creating README files
+    
     ##Table of Contents
-    None
-    ______________________________________
+    
+    
     ##Instillation
-    node.js + inquirer
-    ______________________________________
+    Must install node.js and inquirer in order to use
+    
     ##Credits
-    none
-    ______________________________________
+    Module 9 from UCI FSF Bootcamp
+
     ##license
     MIT
-    ______________________________________
+
     ##Features
-    None, noode, terminal
-    ______________________________________
+    generates README.md file from user input
+    
     ##How to contribute
-    None
+    Never push to main branch. Always work on a different branch and check  with owner before merching into main
