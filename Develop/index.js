@@ -1,6 +1,7 @@
 //  packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const gMark = require('../Develop/utils/generateMarkdown')
 
 
 // an array of questions for user input
@@ -52,28 +53,28 @@ questions = [
 //  function to write README file
 const generateReadMe = ({ProjectTitle, Motivation, tableOfContents, Steps, Credits, license, Features, contribute}) =>
 
-    `#${ProjectTitle}
-    
-    ##Description
-    ${Motivation}
-    
-    ##Table of Contents
-    ${tableOfContents}
-    
-    ##Instillation
-    ${Steps}
-    
-    ##Credits
-    ${Credits}
+`# ${ProjectTitle}
 
-    ##license
-    ${license}
-
-    ##Features
-    ${Features}
+## Description
+${Motivation}
     
-    ##How to contribute
-    ${contribute}`;
+## Table of Contents
+${tableOfContents}
+    
+## Installation
+${Steps}
+    
+## Credits
+${Credits}
+
+## license
+${license}
+
+## Features
+${Features}
+    
+## How to contribute
+${contribute}`;
 
     // inquirer method to implement user input
     inquirer.prompt(questions)
