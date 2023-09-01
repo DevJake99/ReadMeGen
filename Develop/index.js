@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
+
 
 // TODO: Create an array of questions for user input
 questions = [
@@ -31,8 +33,8 @@ questions = [
     },
     {
         type: 'input',
-        name:'Liscense',
-        message:'What liscense does your project use?'
+        name:'license',
+        message:'What license does your project use?'
     },
     {
         type: 'input',
@@ -48,34 +50,60 @@ questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data){
-    const content = 
-    `#${data.ProjecTitle}
+const generateReadMe = ({ProjectTitle, Motivation, tableOfContents, Steps, Credits, license, Features, contribute}) =>
+
+/*function writeToFile(fileName, data){
+    const content = */
+    `#${ProjectTitle}
+    ______________________________________
     
     ##Description
-    ${data.Motivation}
-    
+    ${Motivation}
+    ______________________________________
     ##Table of Contents
-    ${data.tableOfContents}
-    
+    ${tableOfContents}
+    ______________________________________
     ##Instillation
-    ${data.Steps}
-    
+    ${Steps}
+    ______________________________________
     ##Credits
-    ${data.Credits}
-    
-    ##Liscense
-    ${data.Liscense}
-    
+    ${Credits}
+    ______________________________________
+    ##license
+    ${license}
+    ______________________________________
     ##Features
-    ${data.Features}
-    
+    ${Features}
+    ______________________________________
     ##How to contribute
-    ${data.contribute}`;
- }
+    ${contribute}`;
+
+    inquirer.prompt(questions)
+    .then((answers) => {
+        const pageContent = generateReadMe(answers);
+
+        fs.writeFile('README.md', pageContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created README.md!')
+        );
+    });
+    
+   /* fs.writeFile("README.md", data)
+    .then(() => console.log('README file generated successfully'))
+    .catch((err) => comsole.log('Error generating README file:', err));
+
+ }*/
 
 // TODO: Create a function to initialize app
-function init() {}
+
+/*let nobre = 'README';
+function init() {
+    inquirer.prompt(questions)
+    .then((answers) => {
+        fs.writeFile('nobre.md', answers);
+    })
+    .catch((err) => console.error('Error initializing application:', err));
+}*/
 
 // Function call to initialize app
-init();
+//init();
+
