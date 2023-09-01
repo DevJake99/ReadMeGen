@@ -12,7 +12,7 @@ Title. Motivation. Table of contents. Installation. Credits. License. Features. 
 To install this application, clone repository onto your local machine. Next, install node.js and the most current version of inquirer.
     
 ## Credits
-run the node command for the index file to ensure the installation was succesfull
+UCI FSF Bootcamp
 
 ## license
 MIT license
