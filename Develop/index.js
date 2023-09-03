@@ -1,7 +1,7 @@
 //  packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const gMark = require('../Develop/utils/generateMarkdown')
+const gMark = require('../Develop/utils/generateMarkdown.js');
 
 
 // an array of questions for user input
@@ -69,6 +69,7 @@ ${Credits}
 
 ## license
 ${license}
+${gMark.renderLicenseBadge()}
 
 ## Features
 ${Features}
