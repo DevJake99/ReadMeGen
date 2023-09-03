@@ -4,7 +4,7 @@
 This project is intended to assist in the writing of a README file
     
 ## Table of Contents
-NOne
+None
     
 ## Installation
 To install this application, clone repository onto your local machine. Next, install node.js and the most current version of inquirer.
