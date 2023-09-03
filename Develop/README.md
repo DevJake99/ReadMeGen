@@ -1,4 +1,4 @@
-# README Generator
+# README Gen
 
 ## Description
 This project is intended to assist in the writing of a README file
@@ -14,11 +14,10 @@ UCI FSF Bootcamp
 
 ## license
 MIT
-
-undefined
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Features
-Accepts user input from CLI. Generates a basic professional README.md file
+Accepts user input from CLI, Generates a basic professional README.md file
     
 ## How to contribute
 Do not make any changes to main branch. Consult with owner after pushing changes and create a pull request for approval.

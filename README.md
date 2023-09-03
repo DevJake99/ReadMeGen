@@ -1,12 +1,10 @@
-# README Generator
+# README Gen
 
-### Link for video demonstration: 
-https://drive.google.com/file/d/1ce1fQpI3Hmu2ftfC_-qC-VTbUuoWhDs0/view
 ## Description
-I built this project to assist in the generation of a README.md file
+This project is intended to assist in the writing of a README file
     
 ## Table of Contents
-Title. Motivation. Table of contents. Installation. Credits. License. Features. How to contribute
+None
     
 ## Installation
 To install this application, clone repository onto your local machine. Next, install node.js and the most current version of inquirer.
@@ -15,10 +13,11 @@ To install this application, clone repository onto your local machine. Next, ins
 UCI FSF Bootcamp
 
 ## license
-MIT license
+MIT
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Features
-Accepts user input from CLI. Generates a basic professional README.md file
+Accepts user input from CLI, Generates a basic professional README.md file
     
 ## How to contribute
 Do not make any changes to main branch. Consult with owner after pushing changes and create a pull request for approval.

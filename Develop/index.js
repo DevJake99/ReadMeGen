@@ -69,7 +69,7 @@ ${Credits}
 
 ## license
 ${license}
-${gMark.renderLicenseBadge()}
+${gMark.renderLicenseBadge(license)}
 
 ## Features
 ${Features}
