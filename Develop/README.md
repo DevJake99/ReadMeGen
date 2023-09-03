@@ -1,20 +1,21 @@
-# README Gen
+# README Generator
 
 ## Description
 This project is intended to assist in the writing of a README file
     
 ## Table of Contents
-None
+NOne
     
 ## Installation
 To install this application, clone repository onto your local machine. Next, install node.js and the most current version of inquirer.
     
-## Credits
+## Credits/Contributors
 UCI FSF Bootcamp
 
 ## license
-MIT
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+Link: https://opensource.org/licenses/MIT
 
 ## Features
 Accepts user input from CLI, Generates a basic professional README.md file

@@ -24,7 +24,7 @@ questions = [
     {
         type: 'input',
         name: 'Steps',
-        message: 'What are the steps for instilation?'
+        message: 'What are the steps for installation?'
     },
     {
         type: 'input',
@@ -64,12 +64,13 @@ ${tableOfContents}
 ## Installation
 ${Steps}
     
-## Credits
+## Credits/Contributors
 ${Credits}
 
 ## license
-${license}
-${gMark.renderLicenseBadge(license)}
+${license} ${gMark.renderLicenseBadge(license)}
+
+Link: ${gMark.renderLicenseLink(license)}
 
 ## Features
 ${Features}

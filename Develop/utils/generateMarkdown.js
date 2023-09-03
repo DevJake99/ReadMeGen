@@ -29,12 +29,36 @@ function renderLicenseBadge(license) {
   return badgeUrl;
 };
 
-module.exports = {
-  renderLicenseBadge }
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseUrl = '';
+  switch(license){
+    case 'MIT':
+      licenseUrl= 'https://opensource.org/licenses/MIT';
+      break;
+    case 'GNU AGPL':
+      licenseUrl='![License: GNU AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html#license-text)';
+      break;
+    case 'Mozilla':
+      licenseUrl ='![License: Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)' ;
+      break;
+    case 'Apache License':
+      licenseUrl='![License: Apache License Version 2.0](https://choosealicense.com/licenses/apache-2.0/)';
+      break;
+    case 'Boost Software License':
+      licenseUrl="![License: Boost Software License ](https://choosealicense.com/licenses/bsl-1.0/)";
+      break;
+    case 'The Unlicense':
+      licenseUrl ="![License: The Unlicense](https://choosealicense.com/licenses/unlicense/)";
+      break;
+      default:
+        licenseUrl = '';
+  }
+  return licenseUrl;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -69,4 +93,9 @@ function generateMarkdown(data) {
 `;
 }
 
+module.exports = {
+  renderLicenseBadge,
+  renderLicenseLink
+  
+ }
 
